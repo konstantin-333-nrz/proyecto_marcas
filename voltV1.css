@@ -1,0 +1,24 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+ }
+
+body{
+    background-color: #060a0f;
+    color: #c8e6ff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 17px;
+    min-height: 100vh;
+    background-image:
+    linear-gradient(rgba(0,255,65,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,65,0.04) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+ #titulo {
+    background: linear-gradient(135deg, #000c00, #001a0d);
+    border-bottom: 2px solid #00ff41;
+    box-shadow: 0 0 30px rgba(0,255,65,0.4);
+    padding: 4px 0;
+  }
