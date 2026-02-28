@@ -22,3 +22,14 @@ body{
     box-shadow: 0 0 30px rgba(0,255,65,0.4);
     padding: 4px 0;
   }
+#titulo h1 { font-family: 'Orbitron', sans-serif;
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    font-weight: 900;
+    text-align: center;
+    padding: 18px 20px;
+    color: #00ff41;
+    text-shadow: 0 0 10px #00ff41, 0 0 30px #00ff41, 0 0 60px rgba(0,255,65,0.5);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    animation: titlePulse 3s ease-in-out infinite;
+  }
