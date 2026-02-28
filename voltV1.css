@@ -50,11 +50,14 @@ body{
     overflow: hidden;
     transition: color 0.25s;
    }
-   
+
    #principal {
     background: linear-gradient(135deg, #0d1520, #111c2d);
     border: 1px solid rgba(0,255,65,0.25);
     border-left: 4px solid #00ff41;
     padding: 36px 40px;
     box-shadow: 0 0 40px rgba(0,0,0,0.6), 0 0 20px rgba(0,255,65,0.05);
+  }
+  .enlace::before {
+    content: '';
   }
