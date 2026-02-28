@@ -22,7 +22,7 @@ body{
     box-shadow: 0 0 30px rgba(0,255,65,0.4);
     padding: 4px 0;
   }
-  
+
 #titulo h1 { font-family: 'Orbitron', sans-serif;
     font-size: clamp(1.4rem, 4vw, 2.2rem);
     font-weight: 900;
@@ -34,3 +34,11 @@ body{
     text-transform: uppercase;
     animation: titlePulse 3s ease-in-out infinite;
   }
+   .enlace {
+    background: transparent;
+    border: 1px solid rgba(0,255,65,0.4);
+    color: #00ff41;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+   }
