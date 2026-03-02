@@ -20,11 +20,11 @@
         <div id="pag_princ">
             <main id="principal">
     
-            <button class="enlace">Página Principal</button>
-            <button class="enlace">Nuestros cursos </button>
-            <button class="enlace"> Nuestros productos</button>
-            <button class="enlace">Contenido Gratis</button>
-            <button class="enlace">Más sobre nosotros</button>
+            <button class="enlace" id="btn_principal">Página Principal</button>
+            <button class="enlace" id="btn_cursos">Nuestros cursos </button>
+            <button class="enlace" id="btn_productos"> Nuestros productos</button>
+            <button class="enlace" id="btn_contenidos">Contenido Gratis</button>
+            <button class="enlace" id="btn_masobreus">Más sobre nosotros</button>
                 
 
             <div> 
@@ -44,5 +44,13 @@
                 <p>Voltipiqueras Formación Online ;D</p>
             </footer>
         </div>
+
+<script>
+    const boton = document.getElementById("btn_cursos");
+    boton.addEventListener("click" , ()=>{
+        window.alert("Hola");
+        window.location.href="cursos.html";
+    });
+</script>
 </body>
 </html>
