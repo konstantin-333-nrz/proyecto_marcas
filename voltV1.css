@@ -60,4 +60,15 @@ body{
   }
   .enlace::before {
     content: '';
+    position: absolute;
+    inset: 0;
+    background: #00ff41;
+    transform: translateX(-101%);
+    transition: transform 0.25s ease;
+    z-index: 0;
+  }
+   #pag_princ {
+    max-width: 860px;
+    margin: 50px auto;
+    padding: 0 24px;
   }
