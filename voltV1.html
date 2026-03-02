@@ -46,9 +46,13 @@
         </div>
 
 <script>
-    const boton = document.getElementById("btn_cursos");
-    boton.addEventListener("click" , ()=>{
-        window.alert("Hola");
+    const boton1= document.getElementById("btn_principal");
+    boton1-addEventListener("click", ()=>{
+        window.location.href="principal.html";
+    })
+
+    const boton2 = document.getElementById("btn_cursos");
+    boton2.addEventListener("click" , ()=>{
         window.location.href="cursos.html";
     });
 </script>
