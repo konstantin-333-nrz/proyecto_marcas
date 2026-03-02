@@ -32,7 +32,7 @@ body{
     text-shadow: 0 0 10px #00ff41, 0 0 30px #00ff41, 0 0 60px rgba(0,255,65,0.5);
     letter-spacing: 4px;
     text-transform: uppercase;
-    animation: titlePulse 3s ease-in-out infinite;
+
   }
    .enlace {
     background: transparent;
