@@ -42,6 +42,7 @@
             text-transform: uppercase;
         }
         
+        /*he tenido que cambiar el tipo de cursor a pointer para indicar que  se puede hacer click*/
         .curso {
             background: rgba(0,0,0,0.4);
             border: 1px solid rgba(0,255,65,0.15);
@@ -49,7 +50,7 @@
             padding: 20px;
             position: relative;
             transition: border-color 0.25s, box-shadow 0.25s, transform 0.2s;
-            cursor: default;
+            cursor: pointer;
         }
 
         #nav_bar {
@@ -167,12 +168,30 @@
     </div>
     <article id="caja_de_cursos">
 
-    <div class="curso">
-      <img src="imagenes/electricidad.jpg" alt="Electricidad">
-      <div class="curso-num">// MOD_01</div>
-      <h3>Electricidad</h3>
-      <p>Instalación, mantenimiento, automatismos.</p>
-    </div>
+        <!--He añadido el id principal -->
+        <!--curso de electricidada-->
+       <div class="curso" onclick="toggleCurso(this)">
+            <div class="curso-header">
+                <img src="imagenes/electricidad.jpg" alt="Electricidad">
+                <div>
+                    <div class="curso-num">// MOD_01</div>
+                    <h3>Electricidad</h3>
+                    <p>Instalación, mantenimiento, automatismos.</p>
+                </div>
+            </div>
+            <div class="curso-detalle">
+                <div class="curso-detalle-inner">
+                    <p>Aprende desde cero hasta nivel profesional todos los aspectos de las instalaciones eléctricas residenciales e industriales.</p>
+                    <ul>
+                        <li>Instalaciones eléctricas básicas y avanzadas</li>
+                        <li>Mantenimiento preventivo y correctivo</li>
+                        <li>Automatismos y domótica</li>
+                        <li>Normativa eléctrica vigente (REBT)</li>
+                    </ul>
+                    <button class="btn-inscribirse"><span>Inscribirse</span></button>
+                </div>
+            </div>
+        </div>
 
     <div class="curso">
       <img src="imagenes/fontaneria.jpg" alt="Fontanería">
@@ -214,5 +233,22 @@
 <footer>
             <p>Voltipiqueras Formación Online ;D</p>
 </footer>
+<script>
+    
+    function toggleCurso(elemento) {
+        const estaAbierto = elemento.classList.contains('activo');
+
+        
+        document.querySelectorAll('.curso.activo').forEach(el => {
+            el.classList.remove('activo');
+        });
+
+        
+        if (!estaAbierto) {
+            elemento.classList.add('activo');
+        }
+    }
+
+</script>
 </body>
 </html>
