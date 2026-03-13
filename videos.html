@@ -162,7 +162,7 @@
     });
 
     const boton2 = document.getElementById("cursos");
-    boton2.addEventListener("Click", ()=> {
+    boton2.addEventListener("click", ()=> {
         window.location.href="cursos.html";
     });
 
@@ -178,9 +178,9 @@
 
     const boton5= document.getElementById("product");
     boton5.addEventListener("click", ()=>{
-        window.location.href=productos.html;
+        window.location.href="productos.html";
     });
-
+    /*
     const btnPlay = document.querySelectorAll(".btn-play");
     btnPlay.addEventListener("click", (e)=>{
         //Esto no sabia como hacerlo 
@@ -190,8 +190,23 @@
         //Todavia no hay videos disponibles
         //No puedo hacer que funcione correctamente como quiero
 
-    })
+    });
+    */
 
+const btnPlay = document.querySelectorAll(".btn-play");
+btnPlay.forEach(function(boton) {
+    boton.addEventListener("click", function(e) {
+        const tarjeta = e.target.closest(".video-card");
+        //Aqui uso el Appen Child visto en clase ya que no tengo videos para mostrar He necesitado ayuda
+        if (!tarjeta.querySelector(".aviso")) {
+            const aviso = document.createElement("p");
+            aviso.classList.add("aviso");
+            aviso.textContent = "EL CONTENIDO ACTUALMENTE NO ESTÁ DISPONIBLE";
+            aviso.style.color = "#ff4141"
+            tarjeta.appendChild(aviso);
+        }
+    });
+});
 </script>
 </body>
 </html>
