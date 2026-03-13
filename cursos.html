@@ -226,7 +226,7 @@
 
         <!--He añadido el id principal -->
         <!--curso de electricidada-->
-       <div class="curso" onclick="toggleCurso(this)">
+       <div class="curso" id="crs_electricidad">
             <div class="curso-header">
                 <img src="imagenes/electricidad.jpg" alt="Electricidad">
                 <div>
@@ -249,7 +249,7 @@
             </div>
         </div>
 <!--Curso de  fontaneria-->
-    <div class="curso" onclick="toggleCurso(this)">
+    <div class="curso" id="crs_fontaneria">
             <div class="curso-header">
                 <img src="imagenes/fontaneria.jpg" alt="Fontanería">
                 <div>
@@ -273,7 +273,7 @@
             </div>
         </div>
 <!--curso de informatica-->
-    <div class="curso" onclick="toggleCurso(this)">
+    <div class="curso" id="crs_informatica">
             <div class="curso-header">
                 <img src="imagenes/informatica.jpg" alt="Informática">
                 <div>
@@ -296,7 +296,7 @@
             </div>
         </div>
 <!--curso de electronica-->
-    <div class="curso" onclick="toggleCurso(this)">
+    <div class="curso" id="crs_electronica">
             <div class="curso-header">
                 <img src="imagenes/electronica.jpg" alt="Electrónica">
                 <div>
@@ -319,7 +319,7 @@
             </div>
         </div>
 <!--curso de aires acondicionados-->
-       <div class="curso" onclick="toggleCurso(this)">
+       <div class="curso" id="crs_aire_ac">
             <div class="curso-header">
                 <img src="imagenes/aire-acondicionado.jpg" alt="Aire Acondicionado">
                 <div>
@@ -342,7 +342,7 @@
             </div>
         </div>
 <!--curso de redes-->
-    <div class="curso" onclick="toggleCurso(this)">
+    <div class="curso" id="crs_redes">
             <div class="curso-header">
                 <img src="imagenes/redes.jpg" alt="Redes">
                 <div>
@@ -370,18 +370,14 @@
             <p>Voltipiqueras Formación Online ;D</p>
 </footer>
 <script>
-    
-    function toggleCurso(elemento) {
-        const estaAbierto = elemento.classList.contains('activo');
 
-        document.querySelectorAll('.curso.activo').forEach(el => {
-            el.classList.remove('activo');
-        });
-        
-        if (!estaAbierto) {
-            elemento.classList.add('activo');
-        }
-    }
+
+    const cursos = document.querySelectorAll('.curso');
+cursos.forEach((curso) => {
+  curso.addEventListener('click', () => {
+    curso.classList.toggle('open');
+  });
+});
 
 </script>
 </body>
