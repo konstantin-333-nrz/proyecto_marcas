@@ -73,7 +73,7 @@
             transition: color 0.25s;
             width: 100%;
         }
-        
+
          .btn-comprar::before {
             content: '';
             position: absolute;
@@ -84,7 +84,34 @@
             z-index: 0;
         }
 
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid rgba(0,255,65,0.15);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.8rem;
+            color: rgba(0,255,65,0.4);
+            letter-spacing: 2px;
+            margin-top: 40px;
+        }
+        /*El grid lo he tenido que hacer con la IA porque no se cuadraba*/
+        .grid-productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
 
+         /* he copiado un poco el estilo de la de curso*/
+        .item-producto {
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(0,255,65,0.15);
+            border-top: 2px solid rgba(0,255,65,0.6);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: border-color 0.25s, box-shadow 0.25s;
+        }
     </style>
 </head>
 <body>
@@ -105,7 +132,7 @@
     <div class="grid-productos">
         <div class="item-producto">
             <div >
-                <img>
+                <img class="imagen" src="/imagenes/Multimetro.jpg">
             </div>
             <h3>Multímetro Digital Pro</h3>
             <p class="precio">24.99€</p>
@@ -114,7 +141,7 @@
 
         <div class="item-producto">
             <div>
-                <img>
+                <img class="imagen" src="/imagenes/llavegrifa.jpg">
             </div>
             <h3>Llave Grifa 14"</h3>
             <p class="precio">18.50€</p>
@@ -123,7 +150,7 @@
 
         <div class="item-producto">
             <div>
-                <img>
+                <img class="imagen" src="/imagenes/kit_destornilladores.jpg">
             </div>
             <h3>Kit Destornilladores PC</h3>
             <p class="precio">12.90€</p>
@@ -132,7 +159,7 @@
 
         <div class="item-producto">
             <div>
-                <img>
+                <img class="imagen" src="/imagenes/soldador.jpg">
             </div>
             <h3>Soldador de Estaño 60W</h3>
             <p class="precio">15.00€</p>
