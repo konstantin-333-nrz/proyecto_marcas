@@ -68,12 +68,38 @@
             gap: 10px;
             flex-wrap: wrap;
         }
+        /*Aqui he vuelto a usar el mismo que en el de los cursos */
         .video-card {
-            background: rgba(0,0,0,0.3);
-            border: 1px solid rgba(0,255,65,0.1);
-            padding: 15px;
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(0,255,65,0.15);
+            border-top: 2px solid rgba(0,255,65,0.6);
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        .video-card:hover {
+            border-color: #00ff41;
+            box-shadow: 0 0 20px rgba(0,255,65,0.2);
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00ff41;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+        }
+
+        footer {
             text-align: center;
-            transition: transform 0.3s;
+            padding: 30px;
+            color: rgba(0,255,65,0.4);
+            font-size: 0.8rem;
+            letter-spacing: 2px;
         }
 </style>
 <body>
@@ -83,9 +109,11 @@
     </div>
 
     <div id="nav_bar">
-        <button class="enlace">Principal</button>
-        <button class="enlace">Cursos</button>
-        <button class="enlace">Videos</button>
+        <button class="enlace" id="prin">Principal</button>
+        <button class="enlace" id="cursos">Cursos</button>
+        <button class="enlace" id="video">Videos</button>
+        <button class=" enlace" id="masus">Más sobre nosotros</button>
+        <button class="enlace" id="product">Tienda de productos</button>
     </div>
 
     <main id="principal">
@@ -127,5 +155,30 @@
         <p>Voltipiqueras Formación Online ;D</p>
     </footer>
 
+<script>
+    const boton1 = document.getElementById("prin");
+    boton1.addEventListener("click" , ()=>{
+        window.location.href="voltV1.html";
+    });
+
+    const boton2 = document.getElementById("cursos");
+    boton2.addEventListener("Click", ()=> {
+        window.location.href="cursos.html";
+    });
+
+    const boton3 = document.getElementById("video");
+    boton3.addEventListener("click", ()=>{
+        window.location.href="videos.html"
+    })
+
+    const boton4= document.getElementById("masus");
+    boton4.addEventListener("click", ()=>{
+        windws.location.href="infoVolt.html";
+    });
+
+    const boton5= document.getElementById("product");
+    boton5.addEventListenera
+
+</script>
 </body>
 </html>
