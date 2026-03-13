@@ -4,8 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Más sobre nosotros</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+        }
+
+       body {
+            background-color: #060a0f;
+            color: #c8e6ff;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 17px;
+            background-image:
+                linear-gradient(rgba(0,255,65,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,255,65,0.04) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+
+    </style>
 </head>
 <body>
-    
+  <div>
+    <h1 id="titulo">Mas Sobre Voltipiqueras ⚡</h1>
+  </div> 
+  <div id="nav_bar">
+        <button class="enlace" id="prin">Principal</button>
+        <button class="enlace" id="cursos">Cursos</button>
+        <button class="enlace" id="video">Videos</button>
+        <button class=" enlace" id="masus">Más sobre nosotros</button>
+        <button class="enlace" id="product">Tienda de productos</button>
+    </div>
+
+  <div id="principal">
+    <div>
+        <p>
+            La empresa de Voltipiqueras se creo a partir de una necesidad en las pymes de mi pueblo <br>
+            actualmente los jovenes no se interesan por trabajos artesanales como la fontaneria<br>
+            la electricidad instalacion de aires acondicionados... <br>
+            <br>
+        </p>
+        <img src="/imagenes/electricidad.jpg" id="img_masus"> 
+        <p>
+            Sobre todo la queja de estas empresas era que les faltaban fontaneros y nadie cursaba eso y lo que no tenia tiempo la empresa <br>
+            Era de formar a los trabajadores porque carecian del tiempo para lo mismo con esa idea nació voltipiqueras<br>
+            Ahora eramos nosotros quien se encargaba de formar a los trabajadores para trabajos especificos con certificacion valida<br>
+            Asi al trabajador le dabamos una oportunidad para trabajar en una mejor empresa y al empresario le dabamos lo que mas querian<br>
+            Trabajadores cualificados correctamente para desempeñar el trabajo en la empresa
+        </p>
+        <br>
+        <p>
+            Esta idea nace de mi compañero David Belda Piqueras que tiene conocimientos amplios sobre el sector de la electricidad y electromedicina <br>
+            y yo que domino sectores de la informatica asi podiamos juntar sus habilidades con las mias y crear tambien un apartado de informatica básica <br>
+            Tanto de enrutamiento redes locales Instalacion de Sistemas Operativos Seguridad informatica basica programacion basica etc... <br>
+        </p>
+        <p>
+            Nuestro objetivo principal son las pymes locales para que contraten nuestro servicio de educacion online aunque a nivel de usuario tambien podras <br>
+            hacer compras de cursos mas especificos para montar tu propio aire acondicionado o sistemas de placas solares en un futuro <br>
+
+        </p>
+    </div>
+  </div> 
+  <script>
+    const boton1 = document.getElementById("prin");
+    boton1.addEventListener("click" , ()=>{
+        window.location.href="voltV1.html";
+    });
+
+    const boton2 = document.getElementById("cursos");
+    boton2.addEventListener("Click", ()=> {
+        window.location.href="cursos.html";
+    });
+
+    const boton3 = document.getElementById("video");
+    boton3.addEventListener("click", ()=>{
+        window.location.href="videos.html"
+    })
+
+    const boton4= document.getElementById("masus");
+    boton4.addEventListener("click", ()=>{
+        window.location.href="infoVolt.html";
+    });
+
+    const boton5= document.getElementById("product");
+    boton5.addEventListener("click", ()=>{
+        window.location.href=productos.html;
+    });
+
+  </script>
 </body>
 </html>
