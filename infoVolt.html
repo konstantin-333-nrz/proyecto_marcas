@@ -27,6 +27,7 @@
         .parrafo{
             background-color: lightslategray
             padding 10px;
+            font-family: 'Courier New', Courier, monospace;
         }
 
         .enlace {
@@ -45,7 +46,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: #00ff41;
+            /*he tenido que quitar esto porque me daba error al colocarme encima me ponia toda la pantalla en verde*/
             transform: translateX(-101%);
             transition: transform 0.25s ease;
             z-index: 0;
@@ -63,6 +64,25 @@
             position: relative;
             z-index: 1;
         }
+
+         #principal {
+            background: linear-gradient(135deg, #0d1520, #111c2d);
+            border: 1px solid rgba(0,255,65,0.25);
+            border-left: 4px solid #00ff41;
+            padding: 36px 40px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.6), 0 0 20px rgba(0,255,65,0.05);
+        }
+
+        #principal h1{
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            color: #00ff41;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            text-shadow: 0 0 8px rgba(0,255,65,0.5);
+        }
+
 
 
     </style>
