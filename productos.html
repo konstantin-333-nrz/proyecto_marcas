@@ -112,11 +112,20 @@
             gap: 12px;
             transition: border-color 0.25s, box-shadow 0.25s;
         }
-        
+
         .imagen{
             width: 100%;
             height: 180px;
             display: block;
+        }
+
+          #nav_bar {
+            max-width: 860px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -125,6 +134,15 @@
 <div id="titulo">
     <h1> Voltipiqueras Formación</h1>
 </div>
+
+<!--COPIDAO de otras paginas-->
+<div id="nav_bar">
+        <button class="enlace" id="prin">Principal</button>
+        <button class="enlace" id="cursos">Cursos</button>
+        <button class="enlace" id="video">Videos</button>
+        <button class=" enlace" id="masus">Más sobre nosotros</button>
+        <button class="enlace" id="product">Tienda de productos</button>
+    </div>
 
 <article id="principal">
     <h2>Herramientas y Equipo Recomendado</h2>
@@ -187,6 +205,30 @@
         })
     })
 
+    const boton1 = document.getElementById("prin");
+    boton1.addEventListener("click", ()=> {
+        window.location.href="voltV1.html"
+    });
+
+    const boton2 = document.getElementById("cursos");
+    boton2.addEventListener("click", ()=> {
+        window.location.href="cursos.html";
+    });
+
+    const boton3 = document.getElementById("video");
+    boton3.addEventListener("click", ()=>{
+        window.location.href="videos.html"
+    });
+
+    const boton4 = document.getElementById("masus");
+        boton4.addEventListener("click", ()=>{
+            window.location.href="infoVolt.html";
+    });
+
+    const boton5 = document.getElementById("product");
+    boton5.addEventListener("click", ()=>{
+        window.location.href="productos.html"
+    });
 </script>
 </body>
 </html>
