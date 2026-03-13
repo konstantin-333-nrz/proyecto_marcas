@@ -57,7 +57,22 @@
             margin-bottom: 16px;
             text-shadow: 0 0 8px rgba(0,255,65,0.5);
         }
-
+         .btn-comprar {
+            background: transparent;
+            border: 1px solid rgba(0,255,65,0.4);
+            color: #00ff41;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 10px 16px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: color 0.25s;
+            width: 100%;
+        }
 
     </style>
 </head>
@@ -118,5 +133,16 @@
 <footer>
     <p>Voltipiqueras Formación Online ;D</p>
 </footer>
+<script>
+    const botones = document.querySelectorAll(".btn-comprar");
+    botones.forEach(function(boton){
+        boton.addEventListener("click", function() {
+            //Le he pedido ayuda a la IA para entender que tengo que coger lo nuevo que use del data-url
+            const link = boton.getAttribute("data-url");
+            window.open(link, "_blank")
+        })
+    })
+
+</script>
 </body>
 </html>
