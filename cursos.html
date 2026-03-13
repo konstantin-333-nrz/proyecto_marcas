@@ -23,13 +23,14 @@
             background-size: 50px 50px;
         }
         
+        
          #titulo {
             background: linear-gradient(135deg, #000c00, #001a0d);
             border-bottom: 2px solid #00ff41;
             box-shadow: 0 0 30px rgba(0,255,65,0.4);
             padding: 4px 0;
         }
-
+        /*he tenido que borrar el id porque no cogia el estilo correctamente*/
          h1 {
             font-family: 'Orbitron', sans-serif;
             font-size: clamp(1.4rem, 4vw, 2.2rem);
@@ -222,6 +223,14 @@
     <div>
         <h1>Bienvenido a nuestros cursos </h1>
     </div>
+    <div id="nav_bar">
+        <button class="enlace" id="prin">Principal</button>
+        <button class="enlace" id="cursos">Cursos</button>
+        <button class="enlace" id="video">Videos</button>
+        <button class=" enlace" id="masus">Más sobre nosotros</button>
+        <button class="enlace" id="product">Tienda de productos</button>
+    </div>
+
     <article id="caja_de_cursos">
 
         <!--He añadido el id principal -->
@@ -370,6 +379,30 @@
             <p>Voltipiqueras Formación Online ;D</p>
 </footer>
 <script>
+    const boton1 = document.getElementById("prin");
+    boton1.addEventListener("click", ()=> {
+        window.location.href="voltV1.html"
+    });
+
+    const boton2 = document.getElementById("cursos");
+    boton2.addEventListener("click", ()=> {
+        window.location.href="cursos.html";
+    });
+
+    const boton3 = document.getElementById("video");
+    boton3.addEventListener("click", ()=>{
+        window.location.href="videos.html"
+    });
+
+    const boton4 = document.getElementById("masus");
+        boton4.addEventListener("click", ()=>{
+            window.location.href="infoVolt.html";
+    });
+
+    const boton5 = document.getElementById("product");
+    boton5.addEventListener("click", ()=>{
+        window.location.href="productos.html"
+    });
 
 
     const cursos = document.querySelectorAll('.curso');
