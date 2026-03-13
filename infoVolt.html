@@ -40,6 +40,29 @@
             text-transform: uppercase;
             transition: 0.3s;
         }
+        /*Todas las pseudoclases de enlace estan copiadas de documentos anteriores*/
+        .enlace::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: #00ff41;
+            transform: translateX(-101%);
+            transition: transform 0.25s ease;
+            z-index: 0;
+         }
+
+          .enlace:hover::before {
+            transform: translateX(0);
+        }
+
+        .enlace:hover {
+            color: #060a0f;
+        }
+
+        .enlace span {
+            position: relative;
+            z-index: 1;
+        }
 
 
     </style>
