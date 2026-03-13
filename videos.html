@@ -173,11 +173,22 @@
 
     const boton4= document.getElementById("masus");
     boton4.addEventListener("click", ()=>{
-        windws.location.href="infoVolt.html";
+        window.location.href="infoVolt.html";
     });
 
     const boton5= document.getElementById("product");
-    boton5.addEventListenera
+    boton5.addEventListener("click", ()=>{
+        window.location.href=productos.html;
+    });
+
+    const btnPlay = document.querySelectorAll(".btn-play");
+    btnPlay.addEventListener("click", (e)=>{
+        //Esto no sabia como hacerlo 
+        const tarjeta = evento.target.closest(".video-card");
+        const titulo=tarjeta.querySelector("h3").innerText;
+        alert("Cargando video ");
+        //Todavia no hay videos disponibles
+    })
 
 </script>
 </body>
